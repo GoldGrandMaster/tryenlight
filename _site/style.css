@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial',
+    sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial',
+    sans-serif;
+  color: #ffffff;
+  height: 7rem;
+  background: #438cee;
+  background-size: 400% 400%;
+
+  -webkit-animation: GradientAnimation 24s ease infinite;
+  -moz-animation: GradientAnimation 24s ease infinite;
+  animation: GradientAnimation 24s ease infinite;
+}
+.top {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.top a:hover {
+  opacity: 0.7;
+}
+.top .enlight {
+  font-weight: 900;
+  float: left;
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+}
+
+/* post colors */
+
+.maroon {
+  background: linear-gradient(270deg, #a22222, #241313);
+  background-size: 400% 400%;
+
+  -webkit-animation: GradientAnimation 24s ease infinite;
+  -moz-animation: GradientAnimation 24s ease infinite;
+  animation: GradientAnimation 24s ease infinite;
+}
+
+.blue {
+  background: linear-gradient(270deg, #36d1dc, #5b86e5);
+  background-size: 400% 400%;
+
+  -webkit-animation: GradientAnimation 23s ease infinite;
+  -moz-animation: GradientAnimation 23s ease infinite;
+  animation: GradientAnimation 23s ease infinite;
+}
+
+.orange {
+  background: linear-gradient(270deg, #ff5f6d, #ffc371);
+  background-size: 400% 400%;
+
+  -webkit-animation: GradientAnimation 23s ease infinite;
+  -moz-animation: GradientAnimation 23s ease infinite;
+  animation: GradientAnimation 23s ease infinite;
+}
+
+.black {
+  background: linear-gradient(to right, #000000, #434343);
+  background-size: 400% 400%;
+
+  -webkit-animation: GradientAnimation 23s ease infinite;
+  -moz-animation: GradientAnimation 23s ease infinite;
+  animation: GradientAnimation 23s ease infinite;
+}
+
+@-webkit-keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.card {
+  opacity: 0.99;
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
+/* post styles */
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.project-image {
+  width: 500px;
+  height: auto;
+  border-radius: 2%;
+}
+
+.content {
+  max-width: 40em;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.img {
+  display: block;
+  margin: 0 auto;
+}
+.content a {
+  color: inherit;
+  transition: 0.1s;
+  text-decoration: none;
+  border-bottom: 3px solid #e8e8e8;
+}
+
+.content a:hover {
+  text-decoration: none;
+  border-bottom: 5px solid #333;
+}
+/* footer */
+
+footer {
+  background: linear-gradient(270deg, #56ccf2, #438cee);
+  background-size: 400% 400%;
+
+  -webkit-animation: GradientAnimation 24s ease infinite;
+  -moz-animation: GradientAnimation 24s ease infinite;
+  animation: GradientAnimation 24s ease infinite;
+}
+
+/* nav */
+
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: inherit;
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  opacity: 0.8;
+  color: #ffffff;
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: ' ▾';
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+ul .nav-dropdown li {
+  background: #438cee;
+}
+
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  height: 70px;
+  width: 70px;
+}
+
+@media only screen and (max-width: 798px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100% !important;
+    padding-top: 10px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+    background: #438cee;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+  .mobile {
+    display: none;
+    background: inherit;
+  }
+}
+@media screen and (min-width: 799px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
